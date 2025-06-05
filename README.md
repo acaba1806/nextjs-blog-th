@@ -4,8 +4,8 @@
 
 A customizable blog starter using:
 
-- [Next.js](https://github.com/vercel/next.js) v12
-- [Tailwind](https://tailwindcss.com/) v3.0
+- [Next.js](https://github.com/vercel/next.js) v15.3.3
+- [Tailwind](https://tailwindcss.com/) v4
 - Built-in [MDX](https://mdxjs.com/) v1 support
 - Includes modern design with dark & light themes
 
@@ -105,6 +105,12 @@ We’ve included some tooling that helps us maintain these templates. This templ
 - [Renovate](https://www.mend.io/free-developer-tools/renovate/) - to regularly update our dependencies
 - [Cypress](https://www.cypress.io/) - to run tests against how the template runs in the browser
 - [Cypress Netlify Build Plugin](https://github.com/cypress-io/netlify-plugin-cypress) - to run our tests during our build process
+
+If `npx cypress verify` fails, make sure your environment can download the Cypress binary from `download.cypress.io`. When downloads are blocked, you can skip verification by running:
+
+```bash
+CYPRESS_INSTALL_BINARY=0 npx cypress verify
+```
 
 If your team is not interested in this tooling, you can remove them with ease!
 
