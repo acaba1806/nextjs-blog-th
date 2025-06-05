@@ -27,22 +27,32 @@
     "classnames": "^2.5.1",
     "cypress": "^14.4.1",
     "gray-matter": "^4.0.3",
-    "next": "latest",
+    "next": "15.3.3",
     "next-mdx-remote": "^5.0.0",
     "next-remote-watch": "2.0.0",
     "prismjs": "^1.30.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.8",
     "autoprefixer": "^10.4.21",
-    "eslint": "^9.28.0",
+    "eslint": "^8.57.0",
     "eslint-config-next": "15.3.3",
     "eslint-config-prettier": "^10.1.5",
     "netlify-plugin-cypress": "~2.2.1",
     "postcss": "^8.5.4",
     "tailwindcss": "^4.1.8"
+  },
+  "overrides": {
+    "express": {
+      "path-to-regexp": "0.1.12",
+      "cookie": "^0.7.1"
+    },
+    "koa-route": {
+      "path-to-regexp": "^1.9.0"
+    },
+    "koa": "^2.16.1"
   }
 }
